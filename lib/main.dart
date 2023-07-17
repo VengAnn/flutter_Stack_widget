@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'detailapp.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+        statusBarColor:
+            Colors.blue), // Replace Colors.blue with your desired color
+  );
+  //
   runApp(Home());
 }
 
