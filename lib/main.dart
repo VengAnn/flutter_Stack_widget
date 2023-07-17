@@ -4,13 +4,14 @@ import 'package:flutter/services.dart';
 import 'detailapp.dart';
 
 void main() {
+  //set Color for status bar
   SystemChrome.setSystemUIOverlayStyle(
-    SystemUiOverlayStyle(
+    const SystemUiOverlayStyle(
         statusBarColor:
             Colors.blue), // Replace Colors.blue with your desired color
   );
   //
-  runApp(Home());
+  runApp(const Home());
 }
 
 class Home extends StatelessWidget {
@@ -25,7 +26,7 @@ class Home extends StatelessWidget {
           primarySwatch: Colors.amber,
         ),
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -37,7 +38,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Food program use with Stack '),
+        title: const Text('My Food program use with Stack '),
       ),
       //body
       body: SafeArea(child: DetailApp()),
